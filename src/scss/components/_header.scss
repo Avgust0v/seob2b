@@ -1,0 +1,121 @@
+.header {
+  background-color: #161D3B;
+  .container {
+    display: grid;
+    grid-template-columns: 224px  200px 216px 148px 168px;
+    padding: 44px 16px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d94d;
+  }
+
+  &-logo {
+    &__img {
+      display: block;
+      max-width: 224px;
+      height: 44px;
+      width: 100%;
+      object-fit: contain;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 21.74px;
+      color: #D9D9D9;
+    }
+  }
+
+  &-location {
+    padding-left: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: url('../img/city-mark.svg') 0 0 no-repeat;
+    }
+
+    &__city {
+      font-size: 14px;
+      color: #D9D9D9;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    &__img {
+      max-height: 32px;
+      display: block;
+      margin-right: 28px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      color: #D9D9D9;
+      max-width: 164px;
+
+      span {
+        color: #D9B165;
+      }
+    }
+  }
+
+  &-top-title {
+    width: fit-content;
+    position: relative;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #D9D9D9;
+    margin: 0 0 8px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      right: -10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background: linear-gradient(312.51deg, #48C95F 35.99%, #B7FFC4 100%);
+      box-shadow: 0px 0px 10px 2px #48C95F;
+    }
+  }
+
+  &-socials {
+    max-width: 148px;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 30px);
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  &-phone {
+    text-align: right;
+    &__tel {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      color: #D9B165;
+      margin: 0 0 4px;
+    }
+
+    &__button {
+      font-weight: 400;
+      font-size: 16px;
+      color: #D9B165;
+      text-decoration: underline;
+    }
+  }
+}
