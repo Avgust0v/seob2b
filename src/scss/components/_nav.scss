@@ -1,19 +1,21 @@
 .nav {
-  padding: 26px 0;
-  background-color: #161D3B;
+	&.header-nav {
+		padding: 26px 0;
+		background-color: #161d3b;
+	}
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
 
-  &__link {
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    &.active {
-      color: #D9B165;
-    }
-  }
+	&__link {
+		font-weight: 600;
+		font-size: 16px;
+		color: #fff;
+		text-transform: uppercase;
+		&.active {
+			color: #d9b165;
+		}
+	}
 }

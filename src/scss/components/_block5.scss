@@ -1,0 +1,117 @@
+.block5 {
+	position: relative;
+	background: #111043;
+
+	&::after {
+		content: '';
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: url('../img/block5-bg.webp') center top no-repeat;
+		z-index: 1;
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+	&-head {
+		position: relative;
+		margin-bottom: 60px;
+		&__info {
+			max-width: 380px;
+		}
+
+		&__title {
+			position: relative;
+			color: #D9D9D9;
+		}
+
+		&__year {
+			position: absolute;
+			left: 40%;
+			font-weight: 700;
+			font-size: 138.618px;
+			line-height: 203px;
+			color: #D9B165;
+			opacity: 0.3;
+		}
+
+		&__icon {
+			display: block;
+			width: 68px;
+			height: 68px;
+			margin-right: 20px;
+		}
+
+		&__text {
+			color: #D9D9D9;
+		}
+	}
+
+	&-inner {
+		display: grid;
+		grid-template-columns: 1.2fr 0.6fr 0.9fr;
+	}
+
+	&-left {
+		&__img {
+			margin-left: -40px;
+		}
+		&__text {
+			margin: 0 0 40px;
+			font-weight: 600;
+			font-size: 25px;
+			color: #D9D9D9
+		}
+	}
+
+	&-center {
+		&__descr {
+			font-weight: 500;
+			font-size: 18px;
+			color: #D9D9D9;
+			margin: 0 0 40px;
+		}
+
+		&__item {
+			font-weight: 500;
+			font-size: 18px;
+			color: #D9B165;
+			margin-bottom: 24px;
+		}
+	}
+
+	&-right {
+		position: relative;
+		&__person {
+			margin-top: -20px;
+			margin-bottom: -60px;
+		}
+
+		&__info {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			right: 0;
+			bottom: 28%;
+		}
+
+		&__name {
+			font-weight: 600;
+			font-size: 18px;
+			color: #D9D9D9;
+		}
+
+		&__position {
+			font-weight: 500;
+			font-size: 14px;
+			color: #D9D9D9;
+		}
+	}
+}
